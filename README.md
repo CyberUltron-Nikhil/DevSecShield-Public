@@ -1,10 +1,10 @@
 <div align="center">
 
-# 🛡️ DevSec Shield
+# 🛡️ _DevSecShield - DevSecOps Project_
 
 <img src="https://github.com/user-attachments/assets/50e90813-b077-46fc-b316-d3ca416ccc64" alt="DevSec Shield Logo" width="200" height="100">
 
-### _Enterprise-Grade Security Scanning & Intelligence Platform Enhanced by AI_
+### _SAST, SCA, DAST, IAC SCan, MCP & LLM Scan, AI Agents Discovery, AI GuardRails Enhanced by Generative AI_
 
 [![Sign Up](https://img.shields.io/badge/Sign%20Up-Get%20Started-brightgreen?style=for-the-badge&logo=shield)](https://devsecshield.zeroshield.ai/register)
 
@@ -15,7 +15,7 @@
 
 </div>
 
-DevSec Shield is a unified, AI-powered Devsecops assistant designed to provide comprehensive security analysis across multiple dimensions of modern software development. From traditional application security to cutting-edge AI/ML systems, DevSec Shield delivers automated vulnerability detection and actionable remediation guidance. It is a comprehensive security scanning platform that automates vulnerability detection and security intelligence across the entire software development lifecycle. Built with AI-powered analysis capabilities, it provides deep insights into security risks and actionable remediation guidance for traditional applications, AI/ML systems, and infrastructure configurations.
+DevSecShield is a unified, AI-powered Devsecops assistant designed to provide comprehensive security analysis across multiple dimensions of modern software development. From traditional application security to cutting-edge AI/ML systems, DevSec Shield delivers automated vulnerability detection and actionable remediation guidance. It is a comprehensive security scanning platform that automates vulnerability detection and security intelligence across the entire software development lifecycle. Built with AI-powered analysis capabilities, it provides deep insights into security risks and actionable remediation guidance for traditional applications, AI/ML systems, and infrastructure configurations.
 
 **🌟 Key Highlights:**
 - 🤖 **AI-Powered Analysis**: Chat with your scan results for instant, contextual security insights
