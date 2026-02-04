@@ -22,7 +22,8 @@ DevSec Shield is a unified, AI-powered Devsecops assistant designed to provide c
 - 📊 **Interactive Dashboards**: Visualize security trends and vulnerability patterns with insightful analytics
 - 📄 **Professional Reports**: Export comprehensive PDF reports for audits and documentation
 - 🔄 **CI/CD Integration**: Automated SAST scanning in your development pipelines
-- 🛡️ **Guardrails API**: Add security validation layer to any chatbot system
+- 🛡️ **AI Guardrails**: Add security validation layer to any chatbot system
+- 🌐 **DAST Scanning**: Dynamic testing of running applications to find runtime vulnerabilities
 
 ---
 
@@ -42,15 +43,16 @@ https://github.com/user-attachments/assets/61760b6b-8a43-422c-a178-efd84c745f6c
 * [Target Users](#target-users)
 * [Feature Overview](#feature-overview)
   * [1. Static Application Security Testing (SAST)](#1-static-application-security-testing-sast)
-  * [2. Software Composition Analysis & Software Bill of Materials (SCA + SBOM)](#2-software-composition-analysis--software-bill-of-materials-sca--sbom)
-  * [3. Infrastructure as Code (IAC) Security Scanning](#3-infrastructure-as-code-iac-security-scanning)
-  * [4. Code & Data Leakage Detection](#4-code--data-leakage-detection)
-  * [5. MCP Server Vulnerability Scanning](#5-mcp-server-vulnerability-scanning)
-  * [6. LLM Security Benchmarking](#6-llm-security-benchmarking)
-  * [7. AI Agent Discovery & Risk Assessment](#7-ai-agent-discovery--risk-assessment)
-  * [8. CI/CD Integration](#8-cicd-integration)
-  * [9. Guardrails REST API](#9-guardrails-rest-api)
-  * [10. AI-Powered Security Chatbot & Interactive Analysis](#10-ai-powered-security-chatbot--interactive-analysis)
+  * [2. Dynamic Application Security Testing (DAST)](#2-dynamic-application-security-testing-dast)
+  * [3. Software Composition Analysis & Software Bill of Materials (SCA + SBOM)](#3-software-composition-analysis--software-bill-of-materials-sca--sbom)
+  * [4. Infrastructure as Code (IAC) Security Scanning](#4-infrastructure-as-code-iac-security-scanning)
+  * [5. Code & Data Leakage Detection](#5-code--data-leakage-detection)
+  * [6. MCP Server Vulnerability Scanning](#6-mcp-server-vulnerability-scanning)
+  * [7. LLM Security Benchmarking](#7-llm-security-benchmarking)
+  * [8. AI Agent Discovery & Risk Assessment](#8-ai-agent-discovery--risk-assessment)
+  * [9. CI/CD Integration](#9-cicd-integration)
+  * [10. AI Guardrails](#10-ai-guardrails)
+  * [11. AI-Powered Security Chatbot & Interactive Analysis](#11-ai-powered-security-chatbot--interactive-analysis)
 * [Reporting, Dashboards & Analytics](#reporting-dashboards--analytics)
 * [Security Measures & Data Protection](#security-measures--data-protection)
 * [Example Workflows & User Benefits](#example-workflows--user-benefits)
@@ -79,7 +81,8 @@ To transform complex, manual security challenges into automated, actionable insi
 * 📊 **Interactive Dashboards**: Visual analytics and insightful dashboards showing trends, distributions, and security posture metrics
 * 📄 **Professional PDF Reports**: Export comprehensive, branded PDF reports for audits, compliance, and stakeholder communication
 * 🔄 **CI/CD Integration for SAST**: Automated SAST scanning integrated directly into your CI/CD pipelines
-* 🛡️ **Guardrails REST API**: Add security validation layer to chatbot systems by scanning user queries for policy compliance
+* 🛡️ **AI Guardrails**: Add security validation layer to chatbot systems by scanning user queries for policy compliance
+* 🌐 **DAST (Dynamic Application Security Testing)**: Scan running applications for runtime vulnerabilities and exposure risks
 * 🎯 **Unified Security View**: Centralized dashboard showing all security findings across different scan types with severity prioritization
 
 ---
@@ -110,6 +113,7 @@ DevSec Shield provides secure, isolated scanning environments for all repository
 **Supported Scan Types**
 
 * 🔍 **SAST (Static Application Security Testing)**: Secure code analysis without code execution
+* 🌐 **DAST (Dynamic Application Security Testing)**: Secure scanning of running applications for runtime vulnerabilities
 * ☁️ **IAC (Infrastructure as Code)**: Secure scanning of infrastructure configuration files
 * 📦 **SBOM + SCA (Software Bill of Materials + Software Composition Analysis)**: Secure dependency analysis and inventory generation
 * 🤖 **Agent Discovery**: Secure scanning for AI agent identification and risk assessment
@@ -211,7 +215,34 @@ Each SAST scan is executed securely in a dedicated scan worker, processing user-
 
 ---
 
-### 2. Software Composition Analysis & Software Bill of Materials (SCA + SBOM)
+### 2. Dynamic Application Security Testing (DAST)
+
+**Overview**
+
+Dynamic Application Security Testing (DAST) analyzes running applications in real time to identify runtime vulnerabilities, exposure risks, and security issues that only appear when the application is executed. DAST complements SAST by testing the live system from the outside, simulating how an attacker would probe the application.
+
+**Capabilities**
+
+* 🌐 **Runtime Vulnerability Detection**: Identifies vulnerabilities in running web applications and APIs
+* 🔍 **Black-Box Testing**: Scans applications without access to source code, simulating real-world attacks
+* 📍 **OWASP Coverage**: Tests for OWASP Top 10 and API Security Top 10 issues in live environments
+* ⚡ **Exposure & Misconfiguration**: Detects exposed endpoints, insecure headers, and configuration issues
+
+**Output**
+
+* 📋 Runtime vulnerability report with severity levels
+* 🔗 Exposed endpoint and API findings
+* 💡 Remediation recommendations for runtime issues
+
+**Use Cases**
+
+* ✅ Pre-production security validation
+* 🌐 Web application and API security testing
+* 🛡️ Continuous runtime security monitoring
+
+---
+
+### 3. Software Composition Analysis & Software Bill of Materials (SCA + SBOM)
 
 **Overview**
 
@@ -246,7 +277,7 @@ Each SCA scan is executed securely in a dedicated scan worker, analyzing depende
 
 ---
 
-### 3. Infrastructure as Code (IAC) Security Scanning
+### 4. Infrastructure as Code (IAC) Security Scanning
 
 **Overview**
 
@@ -279,7 +310,7 @@ Each IAC scan is executed securely in a dedicated scan worker, analyzing infrast
 
 ---
 
-### 4. Code & Data Leakage Detection
+### 5. Code & Data Leakage Detection
 
 **Overview**
 
@@ -349,7 +380,7 @@ Each MCP server scan is executed securely in a dedicated scan worker, analyzing 
 
 ---
 
-### 6. LLM Security Benchmarking
+### 7. LLM Security Benchmarking
 
 **Overview**
 
@@ -398,7 +429,7 @@ Each LLM security benchmark scan is executed securely in a dedicated scan worker
 
 ---
 
-### 7. AI Agent Discovery & Risk Assessment
+### 8. AI Agent Discovery & Risk Assessment
 
 **Overview**
 
@@ -505,15 +536,15 @@ flowchart TD
 
 ---
 
-### 9. Guardrails REST API
+### 10. AI Guardrails
 
 **Overview**
 
-Guardrails REST API provides a powerful programmatic interface for adding an **extra layer of security scanning to any chatbot or AI system**. Specifically designed for real-time validation of user queries and inputs, the Guardrails API allows you to scan user-submitted content for adherence to your custom input guardrails and security policies before processing.
+AI Guardrails provides a powerful programmatic interface for adding an **extra layer of security scanning to any chatbot or AI system**. Specifically designed for real-time validation of user queries and inputs, AI Guardrails allows you to scan user-submitted content for adherence to your custom input guardrails and security policies before processing.
 
 **🌟 Key Use Case: Secure Your Chatbots**
 
-Protect your AI chatbot systems by scanning every user query against your security policies. Whether you're building customer support bots, code assistants, or AI-powered applications, the Guardrails API ensures malicious, inappropriate, or policy-violating inputs are caught before they reach your AI models.
+Protect your AI chatbot systems by scanning every user query against your security policies. Whether you're building customer support bots, code assistants, or AI-powered applications, AI Guardrails ensures malicious, inappropriate, or policy-violating inputs are caught before they reach your AI models.
 
 **Capabilities**
 
@@ -530,7 +561,7 @@ Protect your AI chatbot systems by scanning every user query against your securi
 ```mermaid
 flowchart TD
     A[User Query/Input] --> B[Your Chatbot/App]
-    B --> C[Guardrails API Call]
+    B --> C[AI Guardrails Call]
     C --> D{Scan Results}
     D -->|Pass| E[Process with AI]
     D -->|Fail| F[Block/Filter Input]
@@ -573,7 +604,7 @@ flowchart TD
 
 ---
 
-### 10. AI-Powered Security Chatbot & Interactive Analysis
+### 11. AI-Powered Security Chatbot & Interactive Analysis
 
 **Overview**
 
@@ -646,7 +677,7 @@ DevSec Shield provides comprehensive, interactive dashboards that transform your
 
 **Key Dashboard Features**
 
-* 🎯 **Unified Security View**: Centralized dashboard showing all scan results across different scan types (SAST, SCA, IAC, LLM, etc.)
+* 🎯 **Unified Security View**: Centralized dashboard showing all scan results across different scan types (SAST, DAST, SCA, IAC, LLM, etc.)
 * 🚨 **Severity Prioritization**: Visual representation of vulnerabilities by severity level with color-coded indicators
 * 📈 **Trend Analysis**: Track security posture over time with historical charts and trend lines
 * 📊 **Vulnerability Distribution**: Pie charts and bar graphs showing vulnerability distribution by type, severity, and location
