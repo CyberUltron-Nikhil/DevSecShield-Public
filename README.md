@@ -43,16 +43,16 @@ https://github.com/user-attachments/assets/61760b6b-8a43-422c-a178-efd84c745f6c
 * [Target Users](#target-users)
 * [Feature Overview](#feature-overview)
   * [1. Static Application Security Testing (SAST)](#1-static-application-security-testing-sast)
-  * [2. Dynamic Application Security Testing (DAST)](#2-dynamic-application-security-testing-dast)
-  * [3. Software Composition Analysis & Software Bill of Materials (SCA + SBOM)](#3-software-composition-analysis--software-bill-of-materials-sca--sbom)
-  * [4. Infrastructure as Code (IAC) Security Scanning](#4-infrastructure-as-code-iac-security-scanning)
-  * [5. Code & Data Leakage Detection](#5-code--data-leakage-detection)
-  * [6. MCP Server Vulnerability Scanning](#6-mcp-server-vulnerability-scanning)
-  * [7. LLM Security Benchmarking](#7-llm-security-benchmarking)
-  * [8. AI Agent Discovery & Risk Assessment](#8-ai-agent-discovery--risk-assessment)
-  * [9. CI/CD Integration](#9-cicd-integration)
-  * [10. AI Guardrails](#10-ai-guardrails)
-  * [11. AI-Powered Security Chatbot & Interactive Analysis](#11-ai-powered-security-chatbot--interactive-analysis)
+  * [2. Software Composition Analysis & Software Bill of Materials (SCA + SBOM)](#2-software-composition-analysis--software-bill-of-materials-sca--sbom)
+  * [3. Infrastructure as Code (IAC) Security Scanning](#3-infrastructure-as-code-iac-security-scanning)
+  * [4. Code & Data Leakage Detection](#4-code--data-leakage-detection)
+  * [5. MCP Server Vulnerability Scanning](#5-mcp-server-vulnerability-scanning)
+  * [6. LLM Security Benchmarking](#6-llm-security-benchmarking)
+  * [7. AI Agent Discovery & Risk Assessment](#7-ai-agent-discovery--risk-assessment)
+  * [8. CI/CD Integration](#8-cicd-integration)
+  * [9. AI Guardrails](#9-ai-guardrails)
+  * [10. AI-Powered Security Chatbot & Interactive Analysis](#10-ai-powered-security-chatbot--interactive-analysis)
+  * [11. Dynamic Application Security Testing (DAST)](#11-dynamic-application-security-testing-dast)
 * [Reporting, Dashboards & Analytics](#reporting-dashboards--analytics)
 * [Security Measures & Data Protection](#security-measures--data-protection)
 * [Example Workflows & User Benefits](#example-workflows--user-benefits)
@@ -215,34 +215,7 @@ Each SAST scan is executed securely in a dedicated scan worker, processing user-
 
 ---
 
-### 2. Dynamic Application Security Testing (DAST)
-
-**Overview**
-
-Dynamic Application Security Testing (DAST) analyzes running applications in real time to identify runtime vulnerabilities, exposure risks, and security issues that only appear when the application is executed. DAST complements SAST by testing the live system from the outside, simulating how an attacker would probe the application.
-
-**Capabilities**
-
-* 🌐 **Runtime Vulnerability Detection**: Identifies vulnerabilities in running web applications and APIs
-* 🔍 **Black-Box Testing**: Scans applications without access to source code, simulating real-world attacks
-* 📍 **OWASP Coverage**: Tests for OWASP Top 10 and API Security Top 10 issues in live environments
-* ⚡ **Exposure & Misconfiguration**: Detects exposed endpoints, insecure headers, and configuration issues
-
-**Output**
-
-* 📋 Runtime vulnerability report with severity levels
-* 🔗 Exposed endpoint and API findings
-* 💡 Remediation recommendations for runtime issues
-
-**Use Cases**
-
-* ✅ Pre-production security validation
-* 🌐 Web application and API security testing
-* 🛡️ Continuous runtime security monitoring
-
----
-
-### 3. Software Composition Analysis & Software Bill of Materials (SCA + SBOM)
+### 2. Software Composition Analysis & Software Bill of Materials (SCA + SBOM)
 
 **Overview**
 
@@ -277,7 +250,7 @@ Each SCA scan is executed securely in a dedicated scan worker, analyzing depende
 
 ---
 
-### 4. Infrastructure as Code (IAC) Security Scanning
+### 3. Infrastructure as Code (IAC) Security Scanning
 
 **Overview**
 
@@ -310,7 +283,7 @@ Each IAC scan is executed securely in a dedicated scan worker, analyzing infrast
 
 ---
 
-### 5. Code & Data Leakage Detection
+### 4. Code & Data Leakage Detection
 
 **Overview**
 
@@ -380,7 +353,7 @@ Each MCP server scan is executed securely in a dedicated scan worker, analyzing 
 
 ---
 
-### 7. LLM Security Benchmarking
+### 6. LLM Security Benchmarking
 
 **Overview**
 
@@ -429,7 +402,7 @@ Each LLM security benchmark scan is executed securely in a dedicated scan worker
 
 ---
 
-### 8. AI Agent Discovery & Risk Assessment
+### 7. AI Agent Discovery & Risk Assessment
 
 **Overview**
 
@@ -536,7 +509,7 @@ flowchart TD
 
 ---
 
-### 10. AI Guardrails
+### 9. AI Guardrails
 
 **Overview**
 
@@ -604,7 +577,7 @@ flowchart TD
 
 ---
 
-### 11. AI-Powered Security Chatbot & Interactive Analysis
+### 10. AI-Powered Security Chatbot & Interactive Analysis
 
 **Overview**
 
@@ -664,6 +637,33 @@ flowchart LR
 * 📚 **Security Education**: Learn about security concepts through interactive Q&A
 * 👥 **Team Collaboration**: Share insights and explanations with team members
 * 🎓 **Onboarding**: Help new team members understand security findings quickly
+
+---
+
+### 11. Dynamic Application Security Testing (DAST)
+
+**Overview**
+
+Dynamic Application Security Testing (DAST) analyzes running applications in real time to identify runtime vulnerabilities, exposure risks, and security issues that only appear when the application is executed. DAST complements SAST by testing the live system from the outside, simulating how an attacker would probe the application.
+
+**Capabilities**
+
+* 🌐 **Runtime Vulnerability Detection**: Identifies vulnerabilities in running web applications and APIs
+* 🔍 **Black-Box Testing**: Scans applications without access to source code, simulating real-world attacks
+* 📍 **OWASP Coverage**: Tests for OWASP Top 10 and API Security Top 10 issues in live environments
+* ⚡ **Exposure & Misconfiguration**: Detects exposed endpoints, insecure headers, and configuration issues
+
+**Output**
+
+* 📋 Runtime vulnerability report with severity levels
+* 🔗 Exposed endpoint and API findings
+* 💡 Remediation recommendations for runtime issues
+
+**Use Cases**
+
+* ✅ Pre-production security validation
+* 🌐 Web application and API security testing
+* 🛡️ Continuous runtime security monitoring
 
 ---
 
