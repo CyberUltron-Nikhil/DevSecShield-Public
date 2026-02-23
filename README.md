@@ -193,7 +193,9 @@ Each SAST scan is executed securely in a dedicated scan worker, processing user-
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/a62c84f5-038a-409c-98f1-a82cf8e395c8" alt="SAST scan screen" width="800">
+<img src="https://github.com/user-attachments/assets/13e150ce-330e-4595-8f74-d71bea9541a6" alt="SAST scan screen" width="800">
+
+<img src="https://github.com/user-attachments/assets/df79f091-1aaa-4fdd-9248-1d142024d4eb" alt="SAST scan screen" width="800">
 
 </div>
 
@@ -233,7 +235,9 @@ Each SCA scan is executed securely in a dedicated scan worker, analyzing depende
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/21caf4f9-cfa2-4029-a7a5-c7f27b32ac3b" alt="SCA scan screen" width="800">
+<img src="https://github.com/user-attachments/assets/8dc60abb-51da-4e13-bc18-dd66097130e6" alt="SCA scan screen" width="800">
+
+<img src="https://github.com/user-attachments/assets/e95799dd-9fc5-4586-af89-f8ef4632fff7" alt="SCA scan screen" width="800">
 
 </div>
 
@@ -273,9 +277,9 @@ Each IAC scan is executed securely in a dedicated scan worker, analyzing infrast
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/f16bc6bb-cb24-4267-827c-1208bfb19809" alt="IAC scan screen" width="800">
+<img src="https://github.com/user-attachments/assets/af5d9161-e459-4805-adfd-91328c2d1b47" alt="IAC scan screen" width="800">
 
-<img src="https://github.com/user-attachments/assets/edd22305-f485-400f-b251-a641bfd8327b" alt="IAC scan screen" width="800">
+<img src="https://github.com/user-attachments/assets/c0d147aa-ba0e-45bc-ac26-ecab702a4ca1" alt="IAC scan screen" width="800">
 
 </div>
 
@@ -317,7 +321,7 @@ Each MCP server scan is executed securely in a dedicated scan worker, analyzing 
 
 <img src="https://github.com/user-attachments/assets/828c80fa-981e-41c7-909a-2556740d1b17" alt="MCP Scanners workflow diagram" width="600">
 
-<img src="https://github.com/user-attachments/assets/0e98eb5f-1a79-4486-a3d0-a4f94784570c" alt="MCP scan screen" width="800">
+<img src="https://github.com/user-attachments/assets/b4c13779-8a53-42eb-b9b5-c6b8669eb5dc" alt="MCP scan screen" width="800">
 
 </div>
 
@@ -626,9 +630,9 @@ DevSec Shield provides comprehensive, interactive dashboards that transform your
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/a5190732-22c4-4302-8e74-0bafb6e4858c" alt="Team Dashboard" width="800">
+<img src="https://github.com/user-attachments/assets/12a8cd63-8ce5-4045-8186-975d4de67bd8" alt="Team Dashboard" width="800">
 
-</div> Track trends, identify patterns, and make data-driven security decisions with our powerful analytics platform.
+</div>
 
 **Key Dashboard Features**
 
