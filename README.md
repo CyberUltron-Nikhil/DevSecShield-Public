@@ -27,9 +27,9 @@ DevSecShield is a unified, AI-powered Devsecops assistant designed to provide co
 
 ---
 
-## 🎥 Demo Video
+## 🎥 Demo Video ( SAST Dashboard )
 
-https://github.com/user-attachments/assets/61760b6b-8a43-422c-a178-efd84c745f6c
+https://github.com/user-attachments/assets/b68e06f4-e9f6-41d9-af8e-07530385408d
 
 
 ---
@@ -191,6 +191,12 @@ Static Application Security Testing analyzes source code without executing it, i
 
 Each SAST scan is executed securely in a dedicated scan worker, processing user-submitted code repositories or uploads to identify security vulnerabilities and generate comprehensive reports.
 
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/a62c84f5-038a-409c-98f1-a82cf8e395c8" alt="SAST scan screen" width="800">
+
+</div>
+
 **Output**
 
 * 📋 Detailed vulnerability reports with severity levels (Critical, High, Medium, Low)
@@ -225,6 +231,12 @@ Software Composition Analysis identifies vulnerabilities in third-party dependen
 
 Each SCA scan is executed securely in a dedicated scan worker, analyzing dependency files to identify vulnerabilities, generate SBOMs, and assess license compliance.
 
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/21caf4f9-cfa2-4029-a7a5-c7f27b32ac3b" alt="SCA scan screen" width="800">
+
+</div>
+
 **Output**
 
 * 📦 Complete SBOM in standard formats
@@ -258,6 +270,14 @@ Infrastructure as Code security scanning analyzes cloud infrastructure configura
 **How It Works**
 
 Each IAC scan is executed securely in a dedicated scan worker, analyzing infrastructure configuration files to identify misconfigurations and security gaps.
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/f16bc6bb-cb24-4267-827c-1208bfb19809" alt="IAC scan screen" width="800">
+
+<img src="https://github.com/user-attachments/assets/edd22305-f485-400f-b251-a641bfd8327b" alt="IAC scan screen" width="800">
+
+</div>
 
 **Output**
 
@@ -296,6 +316,8 @@ Each MCP server scan is executed securely in a dedicated scan worker, analyzing 
 <div align="center">
 
 <img src="https://github.com/user-attachments/assets/828c80fa-981e-41c7-909a-2556740d1b17" alt="MCP Scanners workflow diagram" width="600">
+
+<img src="https://github.com/user-attachments/assets/0e98eb5f-1a79-4486-a3d0-a4f94784570c" alt="MCP scan screen" width="800">
 
 </div>
 
@@ -599,6 +621,14 @@ Dynamic Application Security Testing (DAST) analyzes running applications in rea
 **Overview**
 
 DevSec Shield provides comprehensive, interactive dashboards that transform your security scan results into actionable visual insights. Track trends, identify patterns, and make data-driven security decisions with our powerful analytics platform.
+
+#### Team Dashboard
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/a5190732-22c4-4302-8e74-0bafb6e4858c" alt="Team Dashboard" width="800">
+
+</div> Track trends, identify patterns, and make data-driven security decisions with our powerful analytics platform.
 
 **Key Dashboard Features**
 
