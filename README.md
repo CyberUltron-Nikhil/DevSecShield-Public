@@ -4,7 +4,7 @@
 
 <img src="https://github.com/user-attachments/assets/50e90813-b077-46fc-b316-d3ca416ccc64" alt="DevSec Shield Logo" width="200" height="100">
 
-### _SAST, SCA, DAST, IAC SCan, MCP & LLM Scan, AI Agents Discovery, AI GuardRails Enhanced by Generative AI_
+### _SAST, SCA, DAST, IAC SCan, MCP & LLM Scan, AI GuardRails Enhanced by Generative AI_
 
 [![Sign Up](https://img.shields.io/badge/Sign%20Up-Get%20Started-brightgreen?style=for-the-badge&logo=shield)](https://devsecshield.zeroshield.ai/register)
 
@@ -45,14 +45,12 @@ https://github.com/user-attachments/assets/61760b6b-8a43-422c-a178-efd84c745f6c
   * [1. Static Application Security Testing (SAST)](#1-static-application-security-testing-sast)
   * [2. Software Composition Analysis & Software Bill of Materials (SCA + SBOM)](#2-software-composition-analysis--software-bill-of-materials-sca--sbom)
   * [3. Infrastructure as Code (IAC) Security Scanning](#3-infrastructure-as-code-iac-security-scanning)
-  * [4. Code & Data Leakage Detection](#4-code--data-leakage-detection)
-  * [5. MCP Server Vulnerability Scanning](#5-mcp-server-vulnerability-scanning)
-  * [6. LLM Security Benchmarking](#6-llm-security-benchmarking)
-  * [7. AI Agent Discovery & Risk Assessment](#7-ai-agent-discovery--risk-assessment)
-  * [8. CI/CD Integration](#8-cicd-integration)
-  * [9. AI Guardrails](#9-ai-guardrails)
-  * [10. AI-Powered Security Chatbot & Interactive Analysis](#10-ai-powered-security-chatbot--interactive-analysis)
-  * [11. Dynamic Application Security Testing (DAST)](#11-dynamic-application-security-testing-dast)
+  * [4. MCP Server Vulnerability Scanning](#4-mcp-server-vulnerability-scanning)
+  * [5. LLM Security Benchmarking](#5-llm-security-benchmarking)
+  * [6. CI/CD Integration](#6-cicd-integration)
+  * [7. AI Guardrails](#7-ai-guardrails)
+  * [8. AI-Powered Security Chatbot & Interactive Analysis](#8-ai-powered-security-chatbot--interactive-analysis)
+  * [9. Dynamic Application Security Testing (DAST)](#9-dynamic-application-security-testing-dast)
 * [Reporting, Dashboards & Analytics](#reporting-dashboards--analytics)
 * [Security Measures & Data Protection](#security-measures--data-protection)
 * [Example Workflows & User Benefits](#example-workflows--user-benefits)
@@ -91,13 +89,13 @@ To transform complex, manual security challenges into automated, actionable insi
 
 **Overview**
 
-DevSec Shield provides secure, isolated scanning environments for all repository integrations. Each scan type—SAST, IAC, SBOM + SCA, Agent Discovery, and Data Leakage Detection—runs in dedicated, sandboxed scan workers to ensure complete isolation and security of your codebase.
+DevSec Shield provides secure, isolated scanning environments for all repository integrations. Each scan type—SAST, IAC, SBOM + SCA—runs in dedicated, sandboxed scan workers to ensure complete isolation and security of your codebase.
 
 **How Secure Scanning Works**
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/947dfae5-719f-4913-a45d-680ff0a6a80a" alt="Secure Repository Integration Architecture" width="600">
+<img src="https://github.com/user-attachments/assets/fe99bfc8-6c44-4dd7-9d4f-9ae697600699" alt="Secure repo scanners" width="600">
 
 </div>
 
@@ -116,8 +114,6 @@ DevSec Shield provides secure, isolated scanning environments for all repository
 * 🌐 **DAST (Dynamic Application Security Testing)**: Secure scanning of running applications for runtime vulnerabilities
 * ☁️ **IAC (Infrastructure as Code)**: Secure scanning of infrastructure configuration files
 * 📦 **SBOM + SCA (Software Bill of Materials + Software Composition Analysis)**: Secure dependency analysis and inventory generation
-* 🤖 **Agent Discovery**: Secure scanning for AI agent identification and risk assessment
-* 🔑 **Data Leakage Detection**: Secure scanning for exposed secrets and sensitive data
 
 Each scan type maintains its own secure execution environment, ensuring that your codebase remains protected throughout the entire scanning process.
 
@@ -133,17 +129,13 @@ flowchart TD
     B -->|SAST| C[Scan Worker: SAST]
     B -->|SCA| D[Scan Worker: SCA]
     B -->|IAC| E[Scan Worker: IAC]
-    B -->|Leakage| F[Scan Worker: Secret Detection]
     B -->|LLM| G[Scan Worker: LLM Benchmarking]
-    B -->|Agent| H[Scan Worker: Agent Discovery]
     B -->|MCP| I[Scan Worker: MCP Server]
     
     C --> J[Secure Scan Execution]
     D --> J
     E --> J
-    F --> J
     G --> J
-    H --> J
     I --> J
     
     J --> K[Generate Scan Results]
@@ -283,42 +275,7 @@ Each IAC scan is executed securely in a dedicated scan worker, analyzing infrast
 
 ---
 
-### 4. Code & Data Leakage Detection
-
-**Overview**
-
-Code and Data Leakage Detection scans repositories and codebases to identify exposed secrets, credentials, API keys, tokens, and sensitive data that could lead to security breaches.
-
-**Capabilities**
-
-* 🔑 **Secret Detection**: Identifies hardcoded API keys, passwords, tokens, certificates, and other credentials
-* 🔍 **Pattern Recognition**: Detects secrets using pattern matching and entropy analysis
-* 📜 **Historical Analysis**: Scans entire Git history to find secrets that may have been committed in the past
-* 🔐 **Multiple Secret Types**: Supports detection of AWS keys, GitHub tokens, database credentials, cloud service keys, and more
-* ✅ **False Positive Reduction**: Uses advanced heuristics to minimize false positives while maintaining high detection accuracy
-
-**How It Works**
-
-Each leakage detection scan is executed securely in a dedicated scan worker, scanning codebases and Git history to identify exposed secrets, credentials, and sensitive data.
-
-**Output**
-
-* 📋 List of detected secrets with file locations
-* 🏷️ Secret type classification
-* 🚨 Risk severity ratings
-* 🔄 Recommendations for secret rotation
-* 📜 Historical commit analysis
-
-**Use Cases**
-
-* ✅ Pre-commit secret scanning
-* 🔍 Repository security audits
-* 🚨 Incident response and investigation
-* 📚 Security awareness training
-
----
-
-### 5. MCP Server Vulnerability Scanning
+### 4. MCP Server Vulnerability Scanning
 
 **Overview**
 
@@ -335,6 +292,12 @@ Model Context Protocol (MCP) Server Vulnerability Scanning analyzes MCP servers 
 **How It Works**
 
 Each MCP server scan is executed securely in a dedicated scan worker, analyzing server configurations and testing endpoints for security vulnerabilities.
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/828c80fa-981e-41c7-909a-2556740d1b17" alt="MCP Scanners workflow diagram" width="600">
+
+</div>
 
 **Output**
 
@@ -353,7 +316,7 @@ Each MCP server scan is executed securely in a dedicated scan worker, analyzing 
 
 ---
 
-### 6. LLM Security Benchmarking
+### 5. LLM Security Benchmarking
 
 **Overview**
 
@@ -402,49 +365,7 @@ Each LLM security benchmark scan is executed securely in a dedicated scan worker
 
 ---
 
-### 7. AI Agent Discovery & Risk Assessment
-
-**Overview**
-
-AI Agent Discovery automatically scans codebases to identify AI agents, analyze their capabilities, assess security risks, and provide recommendations for secure agent deployment.
-
-**Capabilities**
-
-* 🔍 **Automatic Agent Detection**: Discovers AI agents in codebases using pattern recognition and code analysis
-* 🏷️ **Framework Identification**: Identifies agents built with LangChain, custom frameworks, or other AI frameworks
-* 🔧 **Tool Analysis**: Analyzes tools and capabilities available to each agent
-* 🎯 **Risk Assessment**: Evaluates security risk based on agent role, capabilities, and tool access
-* 📝 **System Prompt Extraction**: Extracts and analyzes system prompts for security issues
-
-**How It Works**
-
-Each AI agent discovery scan is executed securely in a dedicated scan worker, automatically scanning codebases to identify AI agents, analyze their capabilities, and assess security risks.
-
-**Risk Factors**
-
-* 🚨 **High Risk**: Agents with filesystem access, process execution, network access, or destructive capabilities
-* ⚠️ **Medium Risk**: Agents with read-only access to public data or limited internal resources
-* ✅ **Low Risk**: Agents with simple retrieval or reasoning-only capabilities without external actions
-
-**Output**
-
-* 📋 Agent inventory with file locations
-* 🎯 Risk classification per agent
-* 🔧 Tool and capability analysis
-* 💡 Security recommendations
-* 🏷️ Framework identification
-
-**Use Cases**
-
-* 🔍 AI agent security auditing
-* 🎯 Risk assessment for AI deployments
-* 📜 Security policy enforcement
-* 📊 Agent inventory management
-* ✅ Pre-deployment security validation
-
----
-
-### 8. CI/CD Integration for SAST Scanning
+### 6. CI/CD Integration for SAST Scanning
 
 **Overview**
 
@@ -468,7 +389,6 @@ Integrate DevSec Shield's powerful SAST scanning into your existing CI/CD workfl
 * **Static Application Security Testing (SAST)** - Primary focus for CI/CD integration
 * Software Composition Analysis (SCA)
 * Infrastructure as Code (IAC) scanning
-* Code & Data Leakage detection
 
 **How It Works**
 
@@ -509,7 +429,7 @@ flowchart TD
 
 ---
 
-### 9. AI Guardrails
+### 7. AI Guardrails
 
 **Overview**
 
@@ -524,12 +444,18 @@ Protect your AI chatbot systems by scanning every user query against your securi
 * 🔍 **Chatbot Query Scanning**: Scan user queries and inputs for compliance with your input guardrails
 * 📜 **Custom Policy Enforcement**: Define and enforce your own security policies and content filters
 * 🔑 **API Key Management**: Secure API key generation and management for integrations
-* ⚙️ **Configurable Scanners**: Enable or disable specific scanner types per integration (SAST, SCA, IAC, Leakage Detection)
+* ⚙️ **Configurable Scanners**: Enable or disable specific scanner types per integration (SAST, SCA, IAC)
 * ⚡ **Real-Time Validation**: Instant security validation for user inputs and code submissions
 * 📊 **Scan History**: Maintains comprehensive history of all scans performed through the API
 * 🎛️ **Customizable Settings**: Per-integration configuration for scanner preferences and thresholds
 
 **How It Works**
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/1b39369b-eb3d-4e01-8707-32206dad12ed" alt="AI Guardrails workflow diagram" width="600">
+
+</div>
 
 ```mermaid
 flowchart TD
@@ -549,7 +475,6 @@ flowchart TD
 * 🔍 **Static Application Security Testing (SAST)**: Scan code snippets in user queries
 * 📦 **Software Composition Analysis (SCA)**: Detect dependency vulnerabilities in submitted code
 * ☁️ **Infrastructure as Code (IAC)**: Validate infrastructure configurations
-* 🔑 **Code & Data Leakage Detection**: Identify secrets, API keys, and sensitive data
 
 **Example Integration Scenarios**
 
@@ -577,7 +502,7 @@ flowchart TD
 
 ---
 
-### 10. AI-Powered Security Chatbot & Interactive Analysis
+### 8. AI-Powered Security Chatbot & Interactive Analysis
 
 **Overview**
 
@@ -640,7 +565,7 @@ flowchart LR
 
 ---
 
-### 11. Dynamic Application Security Testing (DAST)
+### 9. Dynamic Application Security Testing (DAST)
 
 **Overview**
 
