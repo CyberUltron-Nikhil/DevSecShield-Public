@@ -4,7 +4,7 @@
 
 <img src="https://github.com/user-attachments/assets/50e90813-b077-46fc-b316-d3ca416ccc64" alt="DevSec Shield Logo" width="200" height="100">
 
-### _SAST, SCA, DAST, IAC SCan, MCP & LLM Scan, AI GuardRails Enhanced by Generative AI_
+### _SAST, SCA, DAST, IAC SCan, MCP & LLM Scan, Red Teaming & Attack Surface Module_
 
 [![Sign Up](https://img.shields.io/badge/Sign%20Up-Get%20Started-brightgreen?style=for-the-badge&logo=shield)](https://devsecshield.zeroshield.ai/register)
 
@@ -22,7 +22,6 @@ DevSecShield is a unified, AI-powered Devsecops assistant designed to provide co
 - 📊 **Interactive Dashboards**: Visualize security trends and vulnerability patterns with insightful analytics
 - 📄 **Professional Reports**: Export comprehensive PDF reports for audits and documentation
 - 🔄 **CI/CD Integration**: Automated SAST scanning in your development pipelines
-- 🛡️ **AI Guardrails**: Add security validation layer to any chatbot system
 - 🌐 **DAST Scanning**: Dynamic testing of running applications to find runtime vulnerabilities
 
 ---
@@ -48,10 +47,9 @@ https://github.com/user-attachments/assets/b68e06f4-e9f6-41d9-af8e-07530385408d
   * [4. MCP Server Vulnerability Scanning](#4-mcp-server-vulnerability-scanning)
   * [5. LLM Security Benchmarking](#5-llm-security-benchmarking)
   * [6. CI/CD Integration](#6-cicd-integration)
-  * [7. AI Guardrails](#7-ai-guardrails)
-  * [8. AI-Powered Security Chatbot & Interactive Analysis](#8-ai-powered-security-chatbot--interactive-analysis)
-  * [9. Dynamic Application Security Testing (DAST)](#9-dynamic-application-security-testing-dast)
-  * [10. Red Teaming & Attack Surface Module](#10-red-teaming--attack-surface-module)
+  * [7. AI-Powered Security Chatbot & Interactive Analysis](#7-ai-powered-security-chatbot--interactive-analysis)
+  * [8. Dynamic Application Security Testing (DAST)](#8-dynamic-application-security-testing-dast)
+  * [9. Red Teaming & Attack Surface Module](#9-red-teaming--attack-surface-module)
 * [Reporting, Dashboards & Analytics](#reporting-dashboards--analytics)
 * [Security Measures & Data Protection](#security-measures--data-protection)
 * [Example Workflows & User Benefits](#example-workflows--user-benefits)
@@ -80,7 +78,6 @@ To transform complex, manual security challenges into automated, actionable insi
 * 📊 **Interactive Dashboards**: Visual analytics and insightful dashboards showing trends, distributions, and security posture metrics
 * 📄 **Professional PDF Reports**: Export comprehensive, branded PDF reports for audits, compliance, and stakeholder communication
 * 🔄 **CI/CD Integration for SAST**: Automated SAST scanning integrated directly into your CI/CD pipelines
-* 🛡️ **AI Guardrails**: Add security validation layer to chatbot systems by scanning user queries for policy compliance
 * 🌐 **DAST (Dynamic Application Security Testing)**: Scan running applications for runtime vulnerabilities and exposure risks
 * 🎯 **Unified Security View**: Centralized dashboard showing all security findings across different scan types with severity prioritization
 
@@ -456,80 +453,7 @@ flowchart TD
 
 ---
 
-### 7. AI Guardrails
-
-**Overview**
-
-AI Guardrails provides a powerful programmatic interface for adding an **extra layer of security scanning to any chatbot or AI system**. Specifically designed for real-time validation of user queries and inputs, AI Guardrails allows you to scan user-submitted content for adherence to your custom input guardrails and security policies before processing.
-
-**🌟 Key Use Case: Secure Your Chatbots**
-
-Protect your AI chatbot systems by scanning every user query against your security policies. Whether you're building customer support bots, code assistants, or AI-powered applications, AI Guardrails ensures malicious, inappropriate, or policy-violating inputs are caught before they reach your AI models.
-
-**Capabilities**
-
-* 🔍 **Chatbot Query Scanning**: Scan user queries and inputs for compliance with your input guardrails
-* 📜 **Custom Policy Enforcement**: Define and enforce your own security policies and content filters
-* 🔑 **API Key Management**: Secure API key generation and management for integrations
-* ⚙️ **Configurable Scanners**: Enable or disable specific scanner types per integration (SAST, SCA, IAC)
-* ⚡ **Real-Time Validation**: Instant security validation for user inputs and code submissions
-* 📊 **Scan History**: Maintains comprehensive history of all scans performed through the API
-* 🎛️ **Customizable Settings**: Per-integration configuration for scanner preferences and thresholds
-
-**How It Works**
-
-<div align="center">
-
-<img src="https://github.com/user-attachments/assets/1b39369b-eb3d-4e01-8707-32206dad12ed" alt="AI Guardrails workflow diagram" width="600">
-
-</div>
-
-```mermaid
-flowchart TD
-    A[User Query/Input] --> B[Your Chatbot/App]
-    B --> C[AI Guardrails Call]
-    C --> D{Scan Results}
-    D -->|Pass| E[Process with AI]
-    D -->|Fail| F[Block/Filter Input]
-    F --> G[Return Security Alert]
-    E --> H[Return Response]
-    
-    classDef default fill:#1e1e1e,stroke:#4a4a4a,stroke-width:2px,color:#e0e0e0
-```
-
-**Supported Scanners**
-
-* 🔍 **Static Application Security Testing (SAST)**: Scan code snippets in user queries
-* 📦 **Software Composition Analysis (SCA)**: Detect dependency vulnerabilities in submitted code
-* ☁️ **Infrastructure as Code (IAC)**: Validate infrastructure configurations
-
-**Example Integration Scenarios**
-
-* 🤖 **Code Assistant Chatbots**: Validate user-submitted code for security vulnerabilities before execution
-* 💬 **Customer Support Bots**: Filter malicious or inappropriate queries
-* 🛠️ **AI Development Tools**: Scan user inputs for security compliance
-* 📝 **Content Generation Systems**: Ensure generated content meets security policies
-
-**API Benefits**
-
-* ✅ **Add Security Layer**: Protect your chatbots without building scanning infrastructure
-* ✅ **Policy Compliance**: Enforce organizational security policies automatically
-* ✅ **Risk Reduction**: Catch security issues before they impact your AI systems
-* ✅ **Scalable Solution**: Handle high-volume query validation with enterprise-grade performance
-* ✅ **Flexible Configuration**: Customize scanning rules per application or use case
-
-**Use Cases**
-
-* 🛡️ Securing AI chatbot systems against malicious inputs
-* ✅ Validating user-submitted code before execution
-* 📜 Enforcing content policies in AI-powered applications
-* ⚡ Real-time security validation in custom workflows
-* 🔗 Third-party integration security for chatbot platforms
-* 🛠️ Policy enforcement in developer tools and assistants
-
----
-
-### 8. AI-Powered Security Chatbot & Interactive Analysis
+### 7. AI-Powered Security Chatbot & Interactive Analysis
 
 **Overview**
 
@@ -592,7 +516,7 @@ flowchart LR
 
 ---
 
-### 9. Dynamic Application Security Testing (DAST)
+### 8. Dynamic Application Security Testing (DAST)
 
 **Overview**
 
@@ -619,11 +543,16 @@ Dynamic Application Security Testing (DAST) analyzes running applications in rea
 
 ---
 
-### 10. Red Teaming & Attack Surface Module
+### 9. Red Teaming & Attack Surface Module
 
 **Overview**
 
 The Red Teaming module is a dedicated workspace for continuous attack-surface mapping, offensive security assessments, and operator oversight. It ties together discovery pipelines, a live knowledge graph of entities and relationships, asset inventory, session monitoring, and an AI-assisted assessment assistant—so teams can plan, run, and review red-team style work in one place.
+
+**Demo Video (Red Teaming & Attack Surface Module)**:
+
+https://github.com/user-attachments/assets/2116e980-345b-4ae1-8085-0805d40fa315
+
 
 **Scans available (this module)**
 
