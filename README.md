@@ -547,7 +547,7 @@ Dynamic Application Security Testing (DAST) analyzes running applications in rea
 
 **Overview**
 
-The Red Teaming module is a dedicated workspace for continuous attack-surface mapping, offensive security assessments, and operator oversight. It ties together discovery pipelines, a live knowledge graph of entities and relationships, asset inventory, session monitoring, and an AI-assisted assessment assistant—so teams can plan, run, and review red-team style work in one place.
+The Red Teaming module is a dedicated workspace for continuous attack-surface mapping, offensive security assessments, and operator oversight. It ties together discovery pipelines, a live knowledge graph of entities and relationships, asset inventory, active sessions/jobs, and an AI-assisted assessment assistant—so teams can plan, run, and review red-team style work in one place.
 
 **Demo Video (Red Teaming & Attack Surface Module)**:
 
@@ -582,7 +582,6 @@ https://github.com/user-attachments/assets/2116e980-345b-4ae1-8085-0805d40fa315
 **Attack Surface (Graph)**
 
 * 🕸️ **Interactive graph** of discovered entities and relationships (infrastructure, applications, findings, and related context)
-* 🧭 **Layout modes**: force-directed, hierarchical tree, and radial views to suit dense or sparse graphs
 * 🧊 **2D and 3D graph modes** with optional node labels
 * 🔎 **Search and preset filters** (e.g. subdomains, IPs, vulnerabilities, infrastructure classes) plus per-type visibility controls
 * 📍 **Node detail drawer** for inspecting properties and pivoting into follow-on work
@@ -593,12 +592,12 @@ https://github.com/user-attachments/assets/2116e980-345b-4ae1-8085-0805d40fa315
 * 📋 **Sortable, filterable table** of graph-backed entities and connections
 * 🔍 **Global search** across the inventory
 * 📤 **Export to spreadsheet** (e.g. Excel) for reporting or offline analysis
-* 🔗 **Open in graph** to see an asset in full relationship context
+* 🔗 **View in graph** to see an asset in relationship context
 
 **Assessments**
 
-* 🧵 **Session and job visibility** for ongoing offensive workflows (e.g. handler sessions, jobs, and related operator actions where integrated)
-* 🎮 **Operator controls** to interact with, upgrade, or terminate sessions and jobs as supported by your deployment
+* 🧵 **Session and job visibility** for ongoing offensive workflows (e.g. handler sessions, background jobs, and related operator actions)
+* 🎮 **Operator controls** for kill/stop and (for supported sessions) upgrade actions
 
 **Discovery & Scanning Pipelines**
 
@@ -613,10 +612,6 @@ https://github.com/user-attachments/assets/2116e980-345b-4ae1-8085-0805d40fa315
 * 🧭 **Multi-phase assessment model** (e.g. informational, exploitation, post-exploitation style phases) aligned to how operators work
 * 🥷 **Stealth-oriented options** where configured for lower-noise collection
 * 🔗 **Graph-aware context** so answers align with the current attack-surface model
-
-**Remediation Linkage (Where Enabled)**
-
-* ✅ **Triage and remediation workspace** connected to findings: review proposed fixes, inspect diffs, and drive **repository-oriented fix flows** (including pull-request style outcomes when GitHub and project settings are configured)
 
 **Typical Use Cases**
 
