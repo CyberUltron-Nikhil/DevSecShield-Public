@@ -26,13 +26,6 @@ DevSecShield is a unified, AI-powered Devsecops assistant designed to provide co
 
 ---
 
-## 🎥 Demo Video ( SAST Dashboard )
-
-https://github.com/user-attachments/assets/b68e06f4-e9f6-41d9-af8e-07530385408d
-
-
----
-
 ## Table of Contents
 
 * [About](#about)
@@ -177,6 +170,10 @@ DevSec Shield aligns with industry-standard security frameworks and methodologie
 **Overview**
 
 Static Application Security Testing analyzes source code without executing it, identifying security vulnerabilities, code quality issues, and potential security risks early in the development lifecycle.
+
+**Demo Video (SAST Dashboard)**
+
+https://github.com/user-attachments/assets/b68e06f4-e9f6-41d9-af8e-07530385408d
 
 **Capabilities**
 
@@ -547,7 +544,7 @@ Dynamic Application Security Testing (DAST) analyzes running applications in rea
 
 **Overview**
 
-The Red Teaming module is a dedicated workspace for continuous attack-surface mapping, offensive security assessments, and operator oversight. It ties together discovery pipelines, a live knowledge graph of entities and relationships, asset inventory, active sessions/jobs, and an AI-assisted assessment assistant—so teams can plan, run, and review red-team style work in one place.
+The Red Teaming module is a dedicated workspace for continuous attack-surface mapping, offensive security assessments, and operator oversight. It ties together discovery pipelines, a live knowledge graph of entities and relationships, asset inventory, active sessions/jobs, and an AI-assisted assessment assistant—so teams can plan, run, and review red-team operations in one place.
 
 **Demo Video (Red Teaming & Attack Surface Module)**:
 
@@ -559,8 +556,8 @@ https://github.com/user-attachments/assets/2116e980-345b-4ae1-8085-0805d40fa315
 | Scan | What it does | What it helps with |
 |------|----------------|-------------------|
 | **Reconnaissance** | Phased external discovery against your scoped target (hosts, DNS, HTTP surface, technologies, and related signals—fed into the graph). | **See what is exposed** before an attacker does: inventory subdomains, IPs, services, and web entry points; prioritize what to harden or test next. |
-| **Network vulnerability (GVM/OpenVAS-style)** | Authenticated-style network/service checks against targets in scope (results tied into the graph). | **Validate weaknesses** on live services: CVE-oriented and configuration findings to patch or segment, complementing recon with scanner-grade evidence. |
-| **Repository / GitHub exposure** | Search-oriented workflow for public (and configured) repository signals such as secrets, sensitive files, and repo metadata—aligned to your program settings. | **Reduce credential and data-leak risk** from accidental commits and misconfigured repos that could enable follow-on attacks. |
+| **Network vulnerability scanning** | Authenticated network and service checks against targets in scope (results tied into the graph). | **Validate weaknesses** on live services: CVE-oriented and configuration findings to patch or segment, complementing recon with scanner-grade evidence. |
+| **Repository exposure analysis** | Search-oriented workflow for public (and configured) repository signals such as secrets, sensitive files, and repo metadata—aligned to your program settings. | **Reduce credential and data-leak risk** from accidental commits and misconfigured repos that could enable follow-on attacks. |
 
 **In short:** these scans turn raw external and repo-facing risk into a **single, explorable model** (graph + tables), so teams can **discover**, **validate**, and **communicate** exposure without juggling separate tools for each step.
 
@@ -572,11 +569,11 @@ https://github.com/user-attachments/assets/2116e980-345b-4ae1-8085-0805d40fa315
 
 **Overview Dashboard**
 
-* 🎯 **Mission-style summary** for the active target: scope, stealth posture, and high-level status
+* 🎯 **Mission summary** for the active target: scope, stealth posture, and high-level status
 * 📊 **Risk and exposure visuals**: charts for exposure trends, surface composition, and severity mix
 * 🏆 **Top exposed assets** surfaced for quick review
-* ⚙️ **Operational coverage**: start runs, open live logs, and download structured outputs for reconnaissance, GVM/OpenVAS-style scanning, and GitHub-oriented exposure workflows
-* 🤖 **Live operations panel** for active automation and agent-style runs
+* ⚙️ **Operational coverage**: start runs, open live logs, and download structured outputs for reconnaissance, network vulnerability scanning, and repository exposure workflows
+* 🤖 **Live operations panel** for active automation and agent-driven runs
 * 🔗 **Quick navigation** into graph, assets, and assessments views
 
 **Attack Surface (Graph)**
@@ -602,21 +599,21 @@ https://github.com/user-attachments/assets/2116e980-345b-4ae1-8085-0805d40fa315
 **Discovery & Scanning Pipelines**
 
 * 🛰️ **Reconnaissance pipeline**: phased external discovery with confirmation before destructive refresh, **live log streaming**, and **JSON export** of results
-* 🔬 **Network vulnerability scanning (GVM/OpenVAS)**: guided start with safeguards when replacing prior results, **live logs**, and **downloadable outputs**
-* 🐙 **Repository exposure analysis**: hunt-style workflow for GitHub-related findings with **logs** and **export**
+* 🔬 **Network vulnerability scanning**: guided start with safeguards when replacing prior results, **live logs**, and **downloadable outputs**
+* 🐙 **Repository exposure analysis**: hunt workflow for repository-related findings with **logs** and **export**
 
 **AI Assessment Assistant**
 
 * 💬 **Real-time chat** with streaming responses and structured tool and timeline presentation
 * 📚 **Conversation history** and session switching for long-running assessments
-* 🧭 **Multi-phase assessment model** (e.g. informational, exploitation, post-exploitation style phases) aligned to how operators work
+* 🧭 **Multi-phase assessment model** (e.g. informational, exploitation, post-exploitation phases) aligned to how operators work
 * 🥷 **Stealth-oriented options** where configured for lower-noise collection
 * 🔗 **Graph-aware context** so answers align with the current attack-surface model
 
 **Typical Use Cases**
 
 * 🗺️ Map and communicate external attack surface from a single target or program
-* 🧪 Coordinate red-team style discovery and validation alongside operator sessions
+* 🧪 Coordinate red-team discovery and validation alongside operator sessions
 * 📣 Brief stakeholders using overview visuals and exported inventories
 * 🤝 Hand off from discovery to AI-guided analysis and, where enabled, structured remediation
 
